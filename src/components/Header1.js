@@ -4,7 +4,7 @@ const Header1 = () => {
   return (
     <div className='flex justify-between shadow-sm'>
          <div className='grid grid-flow-col'>
-        <img className='span-2 w-44 mx-4' alt='logo' src='/image/logo.png'/>
+        <img className='span-2 w-48 mx-4' alt='logo' src='/image/logo.png'/>
     </div>
     <div className='flex span-10'>
         <ul className='flex mx-12'>
