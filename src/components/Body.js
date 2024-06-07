@@ -14,7 +14,7 @@ const Body = () => {
             </button>
             <div className="ml-4">
               <button className='bg-transparent mt-10 py-2 px-4 text-black text-xl'>
-                Learn More
+                Learn More ↗
               </button>
             </div>
           </div>

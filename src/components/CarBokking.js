@@ -9,16 +9,15 @@ const CarBooking = () => {
   const [selectedpicks, setselectedpicks]=useState('')
   const handleCarClick=(car)=>{
     setSelcetedCar(car);
-    setShowDropDown(false)
-
+    setShowDropDown(false);
   }
   const handlePickUp=(location)=>{
- setShowDropDown(false);
- setselectedpicks(location)
+    setShowPickDropDown(false);
+ setselectedpicks(location);
   }
   const handleDrop=(location)=>{
-    setShowDropOff(false)
-    setSelectedDrop(location)
+    setShowDropOff(false);
+    setSelectedDrop(location);
   }
   return (
     <div className="container mx-auto p-4 pt-6 md:p-6 lg:p-12">
@@ -27,12 +26,13 @@ const CarBooking = () => {
       </h1>
       <div className="flex flex-wrap -mx-4">
         <div className="w-full md:w-1/3 p-4">
-          <h2 className="text-sm font-bold mb-2 text-center">Select Your Car</h2>
+          <h2 className="text-sm font-bold mb-2 text-center">Select Your Car </h2>
           <input
             type="text"
-            className="w-full border border-gray-300 p-2 mb-4 text-sm text-gray-700"
-            placeholder="Search for a car" onClick={()=>setShowDropDown(!showDropDown)}
+            className="w-full border border-gray-300 p-2 mb-4 text-sm text-gray-700 justify-between"
+            placeholder="Search for a car " onClick={()=>setShowDropDown(!showDropDown)}
             value={selectedCar}
+           
           />
 
         {showDropDown &&(  <ul className="list-none shadow-md w-full text-center cursor-pointer">
@@ -40,7 +40,7 @@ const CarBooking = () => {
               <li key={car} className="border-b border-gray-200">
                 <h2 className="text-sm font-bold py-2 hover:bg-gray-100" onClick={()=>{handleCarClick(car)}}>
                   {car}
-                  {setSelectedDrop(true)}
+                  
                   </h2>
                   
               </li>
@@ -59,10 +59,8 @@ const CarBooking = () => {
          { showPickDropDown && ( <ul className="list-none shadow-md w-full text-center cursor-pointer">
             {['Bengaluru', 'Hyderabad', 'Chennai', 'Goa', 'Mumbai'].map((location) => (
               <li key={location} className="border-b border-gray-200">
-                <h2 className="text-sm font-bold py-2 hover:bg-gray-100" onClick={()=>{handlePickUp(location)}}
-                
+                <h2 className="text-sm font-bold py-2 hover:bg-gray-100" onClick={()=>{handlePickUp(location)}}  
            >{location}</h2>
-           se
               </li>
             ))}
           </ul>
@@ -76,10 +74,10 @@ const CarBooking = () => {
             onClick={()=>setShowDropOff(!showDropOff)}
             value={selectdDrop}
           />
-     { showDropOff &&(     <ul className="list-none shadow-md w-full text-center cursor-pointer">
+     { showDropOff &&(<ul className="list-none shadow-md w-full text-center cursor-pointer ">
             {['Bengaluru', 'Hyderabad', 'Chennai', 'Goa', 'Mumbai'].map((location) => (
               <li key={location} className="border-b border-gray-200">
-                <h2 className="text-sm font-bold py-2 hover:bg-gray-100" onClick={()=>{handleDrop(location)}}>
+                <h2 className="text-md font-bold py-2 hover:bg-gray-100" onClick={()=>{handleDrop(location)}}>
                   {location}</h2>
               </li>
             ))}

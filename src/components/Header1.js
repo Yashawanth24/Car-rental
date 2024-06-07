@@ -11,7 +11,7 @@ const Header1 = () => {
             <li className='px-4 py-12'>Home</li>
             <li  className='px-4 py-12'>About</li>
             <li  className='px-4 py-12'>Vechical Models</li>
-            <li  className='px-4 py-12'>Conatct</li>
+            <li  className='px-4 py-12'>Contact</li>
             <li  className='px-2 py-12'>SignIn</li>
             <div className='my-10'>
             <button className='px-2 py-2 mx-2 font-bold font-sans bg-orange-600 text-white' > Registor </button>
