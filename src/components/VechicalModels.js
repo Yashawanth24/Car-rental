@@ -114,7 +114,7 @@ const CarDetails = ({ car }) => (
 const VechicalModels = () => {
   const [currentCar, setCurrentCar] = useState(cars[0]);
   const [selectedCarID, setSelectedCarID]=useState(cars[0].id);
-  const [showCarBooking, setShowcarBooking]=useState(false)
+  
  
 
   const handleClick = (car) => {
