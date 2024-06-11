@@ -7,6 +7,8 @@ import Header1 from './components/Header1';
 import VechicalModels from './components/VechicalModels';
 
 import TestimonialList from './components/Testimonial';
+import ChooseUs from './components/Company';
+import Footer from './components/Footer';
 
 function App() {
   const carBookingRef=useRef(null)
@@ -23,7 +25,10 @@ function App() {
         <CarBokking/>
         </div>
         <VechicalModels onReserveNowClick={scrollToCarBooking}/>
+        <ChooseUs/>
         <TestimonialList/>
+        <Footer/>
+       
       </div>
 
   );

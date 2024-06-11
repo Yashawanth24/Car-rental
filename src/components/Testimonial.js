@@ -21,18 +21,24 @@ const Testimonials = [
 const Testimonial = () => {
     return (
         <div >
-            <h1 className='text-3xl font-bold text-center py-4'>
-                What Our Customers Say
+            <h1 className='text-4xl from-neutral-600 font-mono font-bold text-center py-4 pb-10'>
+                What Our Customers Says
             </h1>
-        <div className="flex flex-wrap justify-center gap-4 py-14">
+            <img className='w-24 ml-56' src='/image/testfirst.png'/>
+        <div className="flex flex-wrap justify-center gap-4 py-6">
             {Testimonials.map((testimonial, index) => (
                 <div key={index} className="bg-white shadow-md rounded-lg p-6 w-72 flex flex-col items-center">
+                    
                     <img src={testimonial.photo} alt={testimonial.name} className="rounded-full w-24 h-24 mb-4"/>
                     <p className="font-bold mb-2">{testimonial.name}</p>
                     <p className="text-gray-600 text-center">{testimonial.comment}</p>
+                  
                 </div>
+        
             ))}
+               
         </div>
+        <img className='w-24 ml-[1168px] pb-30' src='/image/testSeconnd.png'/>
         </div>
     );
 };
