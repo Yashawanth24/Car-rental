@@ -81,7 +81,7 @@ const CarListItem = ({ car, onClick, isSelected }) => (
 
 const CarDetails = ({ car }) => (
   <div className="p-6 border border-gray-300 rounded-lg shadow-lg">
-    <h2 className="text-3xl font-bold mb-4 text-center bg-blue-600 py-2">{car.Price}</h2>
+    <h2 className="text-4xl font-bold mb-4 text-center bg-blue-600 py-2">{car.Price}</h2>
     <table className="min-w-full bg-white">
       <tbody>
         <tr className="w-full border-t border-gray-300">
@@ -111,7 +111,7 @@ const CarDetails = ({ car }) => (
   
 );
 
-const VechicalModels = () => {
+const VechicalModels = ({onReserveNowClick}) => {
   const [currentCar, setCurrentCar] = useState(cars[0]);
   const [selectedCarID, setSelectedCarID]=useState(cars[0].id);
   
@@ -123,6 +123,9 @@ const VechicalModels = () => {
   };
  
   return (
+    <div className='p-6 space-x-4'>
+      <h1 className='text-4xl font-serif font-extrabold text-center py-2'>Explore Our Vehicle Models</h1>
+      <h3 className='text-xl  text-center mb-6 py-2'>Select the Perfect Car for Your Needs</h3>
     <div className="flex flex-row p-6 space-x-4">
       <div className="w-[24%] py-8 mx-6">
         <h1 className="text-4xl  font-serif font-extrabold text-center">Cars</h1>
@@ -134,7 +137,7 @@ const VechicalModels = () => {
           ))}
         </ul>
       </div>
-      <div className="w-[43%] flex justify-center">
+      <div className="w-[43%] h-[18%] mt-8 flex justify-center">
         {currentCar && (
           <img
             src={currentCar.image}
@@ -145,10 +148,10 @@ const VechicalModels = () => {
       </div>
       <div className="w-[26%] my-4">
         {currentCar && <CarDetails car={currentCar} />}
-        <div className='flex justify-center'>
-        <button className='py-2 px-6 mx-2 my-2 bg-orange-500 font-bold'>Reserve Now</button>
+        <div className='flex justify-center py-2'>
+        <button className='py-2 px-6 mx-2 my-2 bg-orange-500 font-bold'onClick={onReserveNowClick}>Reserve Now</button>
         </div>
-        
+        </div>
       </div>
     </div>
   );
