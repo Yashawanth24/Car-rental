@@ -12,7 +12,7 @@ const imagePaths = {
 const cars = [
   {
     id: 1,
-    name: "Innova",
+    name: "Innova Crysta",
     image: imagePaths.innvo,
     model: 'Innov',
     mark: "Crysta",
@@ -24,7 +24,7 @@ const cars = [
   
   {
     id: 2,
-    name: "I20",
+    name: "Hyundai I20",
     image: imagePaths.i20,
     model: 'Hyundai',
     mark: "I 20",
@@ -36,7 +36,7 @@ const cars = [
 
   {
     id: 3,
-    name: "Xuv 700",
+    name: "Mahindra Xuv 700",
     image: imagePaths.Xuv,
     model: 'Xuv',
     mark: "700",
@@ -47,7 +47,7 @@ const cars = [
   },
   {
     id: 4,
-    name: "Swift",
+    name: "Maruti Swift",
     image: imagePaths.swift,
     model: 'Maruthi Swift',
     mark: "Swift",
@@ -58,7 +58,7 @@ const cars = [
   },
   {
     id: 5,
-    name: "Nexon",
+    name: "Tata Nexon",
     image: imagePaths.Nexon,
     model: 'Tata Nexon',
     mark: "Nexon",
@@ -73,7 +73,7 @@ const CarListItem = ({ car, onClick, isSelected }) => (
   <li
     key={car.id}
     onClick={() => onClick(car)}
-    className={`py-2 cursor-pointer transition duration-300 text-center ${isSelected ? 'bg-orange-500' : ''}`}
+    className={`py-3  cursor-pointer shadow-md shadow-gray-600 transition duration-300 text-center ${isSelected ? 'bg-orange-500' : ''}`}
     >
     <p className="text-xl font-medium ">{car.name}</p>
   </li>
@@ -124,12 +124,13 @@ const VechicalModels = ({onReserveNowClick}) => {
  
   return (
     <div className='p-6 space-x-4'>
+      <div className='bg-gray-200 p-2 w-[88%] mx-auto shadow-lg'>
       <h1 className='text-4xl font-serif font-extrabold text-center py-2'>Explore Our Vehicle Models</h1>
       <h3 className='text-xl  text-center mb-6 py-2'>Select the Perfect Car for Your Needs</h3>
+      </div>
     <div className="flex flex-row p-6 space-x-4">
       <div className="w-[24%] py-8 mx-6">
-        <h1 className="text-4xl  font-serif font-extrabold text-center">Cars</h1>
-        <ul className="mt-2">
+        <ul className="mt-2 py-6">
           {cars.map((car) => (
             <CarListItem key={car.id} car={car} onClick={handleClick} 
             isSelected={car.id===selectedCarID}

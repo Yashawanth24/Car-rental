@@ -12,23 +12,40 @@ import Footer from './components/Footer';
 
 function App() {
   const carBookingRef=useRef(null)
+  const vechicalRef=useRef(null);
+  const footerRef=useRef(null);
+  const headerRef=useRef(null);
 
   const scrollToCarBooking=()=>{
     carBookingRef.current.scrollIntoView({behavior:"smooth"});
+  };
+  const scroolToVechical=()=>{
+    vechicalRef.current.scrollIntoView({behavior:'smooth'})
+  };
+  const scroolFooter=()=>{
+ footerRef.current.scrollIntoView({behavior:'smooth'})
+  }
+  const scrollHeader=()=>{
+ headerRef.current.scrollIntoView({behavior:'smooth'})
   }
   return (
     
       <div>
-        <Header1/>
-        <Body/>
+        <div ref={headerRef}>
+        <Header1 Onheader={scrollHeader} Onfooter={scroolFooter} onVechicalModelsClick={scroolToVechical}/>
+        </div>
+        <Body onReserveNowClick={scrollToCarBooking}/>
         <div ref={carBookingRef}>
         <CarBokking/>
         </div>
+        <div ref={vechicalRef}>
         <VechicalModels onReserveNowClick={scrollToCarBooking}/>
+        </div>
         <ChooseUs/>
         <TestimonialList/>
-        <Footer/>
-       
+        <div ref={footerRef}>
+        <Footer />
+        </div>
       </div>
 
   );

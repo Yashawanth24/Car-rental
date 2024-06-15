@@ -14,7 +14,7 @@ function ChooseUs() {
           src='/image/main1.png'
           alt="car_img"
         />
-        <div className="flex flex-col md:flex-row items-start md:space-x-8 my-20">
+        <div className="flex flex-col md:flex-row items-start md:space-x-8 my-20 bg-slate-300 py-6 px-6">
           <div className="md:w-1/2">
             <div className="mb-8 my-10">
               <h4 className="text-xl font-semibold text-blue-700">Why Choose Us</h4>
@@ -37,7 +37,7 @@ function ChooseUs() {
             <img className="w-16 h-16 rounded-full" src='/image/crossState.jpg' alt="Cross Country Drive"/>
               <div >
                 <h4 className="text-xl font-semibold">Cross State Drive</h4>
-                <p className="text-gray-700">
+                <p className="text-gray-800">
                   Take your driving experience to the next level with our
                   top-notch vehicles for your cross-country adventures.
                 </p>
@@ -48,7 +48,7 @@ function ChooseUs() {
             <img className="w-20 h-20 rounded-full pl-2 bg-orange-200" src='/image/ruppe2.jpg' alt="All Inclusive Pricing"/>
               <div>
                 <h4 className="text-xl font-semibold">All Inclusive Pricing</h4>
-                <p className="text-gray-700">
+                <p className="text-gray-800">
                   Get everything you need in one convenient, transparent
                   price with our all-inclusive pricing policy.
                 </p>
@@ -59,7 +59,7 @@ function ChooseUs() {
             <img className="w-16 h-16 rounded-full " src='/image/Nocharges.png' alt="No Hidden Charges"/>
               <div>
                 <h4 className="text-xl font-semibold">No Hidden Charges</h4>
-                <p className="text-gray-700">
+                <p className="text-gray-800">
                   There are no hidden charges. We believe in transparent and honest pricing.
                 </p>
               </div>

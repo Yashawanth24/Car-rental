@@ -1,26 +1,26 @@
-import React from 'react'
+import React from 'react';
+import './Header1.css'; // 
 
-const Header1 = () => {
+const Header1 = ({ Onheader, Onfooter, onVechicalModelsClick }) => {
   return (
-    <div className='flex justify-between shadow-sm'>
-         <div className='grid grid-flow-col'>
-        <img className='span-2 w-48 mx-4' alt='logo' src='/image/logo.png'/>
-    </div>
-    <div className='flex span-10'>
+    <div className='header fixed-header flex justify-between shadow-sm'>
+      <div className='grid grid-flow-col'>
+        <img className='span-2 w-28 mx-10 my-2' alt='logo' src='/image/CompIcon2.png' />
+      </div>
+      <div className='flex span-10'>
         <ul className='flex mx-12'>
-            <li className='px-4 py-12'>Home</li>
-            <li  className='px-4 py-12'>About</li>
-            <li  className='px-4 py-12'>Vechical Models</li>
-            <li  className='px-4 py-12'>Contact</li>
-            <li  className='px-2 py-12'>SignIn</li>
-            <div className='my-10'>
-            <button className='px-2 py-2 mx-2 font-bold font-sans bg-orange-600 text-white' > Registor </button>
-            </div>
+          <li className='px-4 py-12 cursor-pointer' onClick={Onheader}>Home</li>
+          <li className='px-4 py-12 cursor-pointer' onClick={Onfooter}>About</li>
+          <li className='px-4 py-12 cursor-pointer' onClick={onVechicalModelsClick}>Vechical Models</li>
+          <li className='px-4 py-12 cursor-pointer' onClick={Onfooter}>Contact</li>
+          <li className='px-2 py-12'>SignIn</li>
+          <div className='my-10'>
+            <button className='px-2 py-2 mx-2 font-bold font-sans bg-orange-600 text-white'>Register</button>
+          </div>
         </ul>
+      </div>
     </div>
-    </div>
-    
-  )
+  );
 }
 
-export default Header1
+export default Header1;

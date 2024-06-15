@@ -21,7 +21,7 @@ const Testimonials = [
 const Testimonial = () => {
     return (
         <div >
-            <h1 className='text-4xl from-neutral-600 font-mono font-bold text-center py-4 pb-10'>
+            <h1  className='text-4xl   font-mono font-bold text-center text-stone-600 py-4 pb-10'>
                 What Our Customers Says
             </h1>
             <img className='w-24 ml-56' src='/image/testfirst.png'/>
