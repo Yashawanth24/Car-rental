@@ -126,7 +126,7 @@ const VechicalModels = ({onReserveNowClick}) => {
     <div className='p-6 space-x-4'>
       <div className='bg-gray-200 p-2 w-[88%] mx-auto shadow-lg'>
       <h1 className='text-4xl font-serif font-extrabold text-center py-2'>Explore Our Vehicle Models</h1>
-      <h3 className='text-xl  text-center mb-6 py-2'>Select the Perfect Car for Your Needs</h3>
+      <h3 className='text-xl  text-center text-gray-800 font-medium mb-4 py-2'>Select the Perfect Car for Your Needs</h3>
       </div>
     <div className="flex flex-row p-6 space-x-4">
       <div className="w-[24%] py-8 mx-6">
