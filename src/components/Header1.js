@@ -1,5 +1,7 @@
 import React from 'react';
 import './Header1.css'; // 
+// import {IMG1} from /image/CompIcon2.png
+// swift: '/image/Swift2.png',
 
 const Header1 = ({ Onheader, Onfooter, onVechicalModelsClick }) => {
   return (
