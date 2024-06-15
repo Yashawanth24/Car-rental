@@ -7,7 +7,7 @@ const Header1 = ({ Onheader, Onfooter, onVechicalModelsClick }) => {
   return (
     <div className='header fixed-header flex justify-between shadow-sm'>
       <div className='grid grid-flow-col'>
-        <img className='span-2 w-28 mx-10 my-2' alt='logo' src='/image/compIcon2.png' />
+        <img className='span-2 w-28 mx-10 my-2' alt='logo' src='/image/compicon2.png' />
       </div>
       <div className='flex span-10'>
         <ul className='flex mx-12'>
