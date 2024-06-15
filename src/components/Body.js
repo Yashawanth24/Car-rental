@@ -23,7 +23,7 @@ const Body = ({onReserveNowClick}) => {
         </div>
       </div>
       <div className="w-100 h-60">
-        <img alt="Car" src="/image/carbody.png" className="object-cover" />
+        <img alt="Car" src="/image/carbody1.png" className="object-cover" />
       </div>
     </div>
   );
