@@ -15,6 +15,12 @@ const Footer = () => {
           <p className='py-1'>Careers</p>
           <p className='py-1'>Mobile</p>
         </div>
+        <div className='my-4'>
+          <h1 className='font-bold text-lg mb-4'>Address</h1>
+          <p className='py-1'>Car-Rental</p>
+          <p className='py-1'>No. 123, ABC Building,</p>
+          <p className='py-1'>Bengaluru, Karnataka 560001</p>
+        </div>
         <div className='my-4 flex flex-col items-center md:items-start'>
           <h1 className='font-bold text-lg mb-4'>Subscribe</h1>
           <p className='py-1 text-center md:text-left'>Subscribe your email address for latest news & updates</p>
