@@ -9,6 +9,8 @@ import VechicalModels from './components/VechicalModels';
 import TestimonialList from './components/Testimonial';
 import ChooseUs from './components/Company';
 import Footer from './components/Footer';
+import ParentCar from './components/ParentCar';
+import CarBokkingPage from './components/ParentCar';
 
 function App() {
   const carBookingRef=useRef(null)
@@ -36,10 +38,7 @@ function App() {
         </div>
         <Body onReserveNowClick={scrollToCarBooking}/>
         <div ref={carBookingRef}>
-        <CarBokking/>
-        </div>
-        <div ref={vechicalRef}>
-        <VechicalModels onReserveNowClick={scrollToCarBooking}/>
+        <CarBokkingPage/>
         </div>
         <ChooseUs/>
         <TestimonialList/>

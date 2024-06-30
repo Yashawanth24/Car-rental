@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 
 const imagePaths = {
@@ -111,11 +111,19 @@ const CarDetails = ({ car }) => (
   
 );
 
-const VechicalModels = ({onReserveNowClick}) => {
+const VechicalModels = ({selectedCar}) => {
   const [currentCar, setCurrentCar] = useState(cars[0]);
   const [selectedCarID, setSelectedCarID]=useState(cars[0].id);
   
- 
+  useEffect(()=>{
+    if(selectedCar){
+      const car=cars.find((car)=> car.name===selectedCar);
+      if(car){
+        setCurrentCar(car);
+        setSelectedCarID(car.id)
+      }
+    }
+  },[selectedCar])
 
   const handleClick = (car) => {
     setCurrentCar(car);
@@ -150,7 +158,7 @@ const VechicalModels = ({onReserveNowClick}) => {
       <div className="w-[26%] my-4">
         {currentCar && <CarDetails car={currentCar} />}
         <div className='flex justify-center py-2'>
-        <button className='py-2 px-6 mx-2 my-2 bg-orange-500 font-bold'onClick={onReserveNowClick}>Reserve Now</button>
+        <button className='py-2 px-6 mx-2 my-2 bg-orange-500 font-bold'>Reserve Now</button>
         </div>
         </div>
       </div>
