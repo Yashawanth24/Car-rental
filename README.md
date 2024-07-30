@@ -25,4 +25,4 @@ React, JavaScript, Redux, TailwindCSS
 
 ## Screenshort
 
-![image](https://drive.google.com/file/d/1rt_vhPs0S7SE1J7fkQDHE1Q3V1aTbGmF/view?usp=sharing)
+![image](https://imgcdn.dev/i/screenshot-2024-07-09-111759.LgFN0)
