@@ -1,8 +1,8 @@
 
 
-### Car Rental
+# Car Rental
 
-# About This Project
+## About This Project
 
 • A car rental web Application is an online platform where users can quickly browse, compare,
 and book vehicles for personal or business use. It offers a user-friendly interface with a wide
