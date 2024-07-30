@@ -24,5 +24,6 @@ React, JavaScript, Redux, TailwindCSS
 - Reservation and booking process
 
 ## Screenshort
+![Screenshot 2024-07-09 111759](https://github.com/user-attachments/assets/bbbcfe00-bb21-4186-b680-eb937a1cfa5f)
 
-![image](https://imgcdn.dev/i/screenshot-2024-07-09-111759.LgFN0)
+
